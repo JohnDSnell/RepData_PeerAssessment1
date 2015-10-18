@@ -1299,7 +1299,6 @@ print.data.frame(summarydata)
 
 p<-ggplot(summarydata, aes(interval, averagestepsbyinterval)) + geom_line() + 
                         xlab("interval") + ylab("Average steps for interval")
-
 #plot using panels based on type of day - panels are presented column wise
 p+facet_grid(daytype~.)
 ```
